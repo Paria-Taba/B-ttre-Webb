@@ -1,35 +1,31 @@
 body {
   margin: 0 auto;
-  min-width: 900px;
 }
 header {
   background-color: rgb(254, 222, 227);
   border: 5px double rgb(183, 110, 122);
 }
 nav ul {
-  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  padding: 0;
+  padding: 20px;
 }
 nav ul li {
   list-style: none;
   font-size: 20px;
   font-weight: bold;
-  color: rgb(77, 53, 53);
   padding: 20px;
-  margin: 30px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-nav ul a {
+nav ul li a {
   text-decoration: none;
+  color: rgb(77, 53, 53);
 }
-
 nav ul li:hover {
-  border-radius: 10%;
   background-color: rgb(112, 108, 108);
+  color: white;
+  border-radius: 10%;
+}
+nav ul li a:hover {
   color: white;
 }
 .header-1 {
@@ -67,104 +63,114 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-main{
-	background-color: rgb(226, 226, 226);
-	border: 5px double gray;
+main {
+  background-color: rgb(226, 226, 226);
+  border: 5px double gray;
 }
-.main-p{
-	padding: 20px 80px 40px 80px;
-	font-size: 20px;
-	text-justify: auto;
-	
+.main-p {
+  padding: 20px 80px 40px 80px;
+  font-size: 20px;
+  text-justify: auto;
 }
-.main{
-	padding: 20px;
-	border: 2px solid black;
-	background-color: rgb(87, 82, 82);
+.main {
+  padding: 20px;
+  border: 2px solid black;
+  background-color: rgb(87, 82, 82);
 }
-.main-1{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	background-color: rgba(220, 218, 218, 0.557);
+.main-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(220, 218, 218, 0.557);
 }
-.main-1 div{
-	border: 2px solid rgb(67, 62, 62);
+.main-1 div {
+  border: 2px solid rgb(67, 62, 62);
 }
 .main-1 .column .title {
-	font-size: 20px;
-	font-weight: bold;
-	color: rgb(49, 32, 32);
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(49, 32, 32);
 }
-.main-1 .column li{
-	margin: 20px;
+.main-1 .column li {
+  margin: 20px;
 }
-.main-1 .column button{
-background-color: gray;
-border: none;
-padding: 15px;
-border-radius:10%;
-margin-left: 50px;
-font-style: italic;
+.main-1 .column button {
+  background-color: gray;
+  border: none;
+  padding: 15px;
+  border-radius: 10%;
+  margin-left: 50px;
+  font-style: italic;
 }
-.main-1 .column button a{
-	text-decoration: none;
-	color: white;
+.main-1 .column button a {
+  text-decoration: none;
+  color: white;
 }
-.main-1 .column .button-1{
-	margin-bottom: 20px;
+.main-1 .column .button-1 {
+  margin-bottom: 20px;
 }
-.main .img-2 img{
-	width: 100%;
-	margin-top: 20px;
+.main .img-2 img {
+  width: 100%;
+  margin-top: 20px;
 }
-.main .img-2 img:hover{
-	transform: scale(0.96);
+.main .img-2 img:hover {
+  transform: scale(0.96);
 }
-footer{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	background-image: url("pic/abstract-blurred-background-pink-grey_877110-410.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	border: 5px double gray;
-	padding: 20px;
-	background-color: rgb(226, 226, 226);
-}
-footer>*{
-		font-size: 20px;
-}
-.div-1{
-	display: flex;
-	flex-direction: column;
-}
-.div-1 a{
-	text-decoration: none;
-	color: black;
-	padding: 10px;
-}
-footer .div-2 img {
-	width: 40px;
-	padding: 10px;
-}
-footer .div-2{
-	display: flex;
-	flex-direction: column;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 5px double gray;
+  padding: 20px;
+  background-color: rgb(226, 226, 226);
 }
 
-footer h3{
-	font-size: 30px;
+footer > * {
+  min-width: 200px;
+  font-size: 20px;
+  flex-grow: 1;
+  flex-basis: 0;
 }
-footer .div-1>a:hover{
-	background-color: pink;
-	text-decoration: underline;
-	border-radius: 10%;
- font-weight: bold;
+.div-1 {
+  display: flex;
+  flex-direction: column;
 }
-footer .div-2 img:hover{
-	transform: scale(1.1);
+.div-1 a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
 }
-footer .div-3>p{
-	padding: 10px;
+footer .div-2 img {
+  width: 40px;
+  padding: 10px;
+}
+footer .div-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3 {
+  font-size: 30px;
+}
+footer .div-1 > a:hover {
+  background-color: pink;
+  text-decoration: underline;
+  border-radius: 10%;
+  font-weight: bold;
+}
+footer .div-2 img:hover {
+  transform: scale(1.1);
+}
+footer .div-3 > p {
+  padding: 10px;
+}
+@media screen and (max-width: 600px) {
+  .main-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-1 .column button {
+    margin-bottom: 20px;
+  }
 }
