@@ -56,7 +56,7 @@ h2 {
 }
 .title {
   margin-top: 0;
-  padding-top: 40px;
+  padding-top: 10px;
   color: rgb(40, 35, 35);
   display: flex;
   justify-content: center;
@@ -161,6 +161,7 @@ footer .div-1 > a:hover {
   text-decoration: underline;
   border-radius: 10%;
   font-weight: bold;
+  width: 60%;
 }
 footer .div-2 img:hover {
   transform: scale(1.1);
@@ -218,5 +219,7 @@ footer .div-2 img:hover {
 	 .main-1 .column ul{
 		padding-left: 10px;
 	 }
-	
+	 footer .div-1 > a:hover {
+		width: 100%;
+	  }
 }
