@@ -101,14 +101,15 @@ main {
   margin-left: 50px;
   font-style: italic;
   cursor: pointer;
+  color: white;
 }
 .main-1 .column button:hover{
 	transform: scale(1.1);
 	background-color: rgb(60, 60, 60);
+	
 }
 .main-1 .column button a {
   text-decoration: none;
-  color: white;
 }
 .main-1 .column .button-1 {
   margin-bottom: 20px;
