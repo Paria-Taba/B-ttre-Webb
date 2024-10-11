@@ -12,10 +12,10 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#">Hem</a></li>
-				<li><a href="#">Seminarier</a></li>
-				<li><a href="#">Anmälan</a></li>
-				<li><a href="#">Om konferensen</a></li>
+				<li><a href="index.html">Hem</a></li>
+				<li><a href="seminarier.html">Seminarier</a></li>
+				<li><a href="anmälan.html">Anmälan</a></li>
+				<li><a href="#">Om konferens</a></li>
 				<li><a href="#">Kontakt</a></li>
 			</ul>
 		</nav>
@@ -53,30 +53,30 @@
 			</div>
 			<div class="days">
 				<h4>Deltagande dagar</h4>
-				<p>Vänligen välj om du vill delta en, två eller alla tre dagar:</p>
+				<p>Vänligen välj om du vill delta en, två eller alla tre dagar:*</p>
 				<div class="row">
-					<input type="checkbox" id="one">
+					<input type="checkbox" id="one" required>
 					<label for="one">18 oktober 2024</label>
 				</div>
-				<div class="row"><input type="checkbox" id="two">
+				<div class="row"><input type="checkbox" id="two" required>
 					<label for="two">19 oktober 2024</label>
 				</div>
-				<div class="row"><input type="checkbox" id="three">
+				<div class="row"><input type="checkbox" id="three" required>
 					<label for="three">20 oktober 2024</label>
 				</div>
 			</div>
 			<div class="food">
 				<h4>Matpreferenser</h4>
-				<p>Vänligen välj din matpreferens:</p>
+				<p>Vänligen välj din matpreferens:*</p>
 				<div>
-					<input type="radio" id="food-one" name="food">
+					<input type="radio" id="food-one" name="food" required>
 					<label for="food-one">Kött</label>
 				</div>
 				<div>
-					<input type="radio" id="food-two" name="food">
+					<input type="radio" id="food-two" name="food" required>
 					<label for="food-two">Fisk</label>
 				</div>
-				<div><input type="radio" id="food-three" name="food">
+				<div><input type="radio" id="food-three" name="food" required>
 					<label for="food-three">Vegetarisk</label>
 				</div>
 				<div class="food-allergy">

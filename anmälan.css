@@ -19,9 +19,9 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: rgb(77, 53, 53);
-   padding: 20px;
+  padding: 20px;
 }
-nav ul li>*:hover {
+nav ul li > *:hover {
   background-color: rgb(148, 142, 142);
   border-radius: 10%;
   color: white;
@@ -97,10 +97,17 @@ main .Personuppgifter div {
   flex-direction: column;
 }
 main .Personuppgifter input {
-  width: 60%;
+  width: 50%;
   height: 30px;
   margin-bottom: 20px;
 }
+main .Personuppgifter input:invalid {
+  border: 1px solid red;
+ 
+}
+main .Personuppgifter input:required:valid{
+    border: 1px solid green;
+  }
 main .Personuppgifter label {
   margin-bottom: 20px;
 }
@@ -146,61 +153,61 @@ main .send button:hover {
 }
 
 footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	border: 5px double gray;
-	background-color: rgb(226, 226, 226);
-  }
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 5px double gray;
+  background-color: rgb(226, 226, 226);
+}
+
 footer > * {
-	font-size: 20px;
-	flex-grow: 1;
-	flex-basis: 0;
-	padding: 10px;
-  }
-  .div-1 {
-	display: flex;
-	flex-direction: column;
-  }
-  .div-1 a {
-	text-decoration: none;
-	color: black;
-	padding: 10px;
-  }
-  footer .div-2 img {
-	width: 40px;
-	padding: 10px;
-  }
-  footer .div-2 {
-	display: flex;
-	flex-direction: column;
-  }
-  
-  footer h3 {
-	font-size: 30px;
-  }
-  footer .div-1 > a:hover {
-	background-color: pink;
-	text-decoration: underline;
-	border-radius: 10%;
-	font-weight: bold;
-	width: 60%;
-  }
-  footer .div-2 img:hover {
-	transform: scale(1.1);
-  }
-  
-  @media screen and (max-width: 600px) {
+  font-size: 20px;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+}
+.div-1 {
+  display: flex;
+  flex-direction: column;
+}
+.div-1 a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+footer .div-2 img {
+  width: 40px;
+  padding: 10px;
+}
+footer .div-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3 {
+  font-size: 30px;
+}
+footer .div-1 > a:hover {
+  background-color: pink;
+  text-decoration: underline;
+  border-radius: 10%;
+  font-weight: bold;
+  width: 60%;
+}
+footer .div-2 img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
   nav ul {
     display: flex;
     flex-direction: column;
-	margin-left: 0;
-	padding-left: 0;
+    margin-left: 0;
+    padding-left: 0;
   }
-  nav ul li{
-	padding: 20px;
+  nav ul li {
+    padding: 20px;
   }
   .img-1 img {
     position: absolute;
@@ -223,31 +230,35 @@ footer > * {
   nav ul {
     width: 70%;
   }
-  nav ul li{
-	width: 100%;
+  nav ul li {
+    width: 100%;
   }
 }
 @media screen and (max-width: 760px) {
   footer .div-1 > a:hover {
     width: 100%;
   }
-}
-
-@media screen and (max-width: 600px){
-	main .Personuppgifter,
-.days,
-.food {
-  margin: 10px;
-  padding: 5pz;
-}
-main .Personuppgifter input {
-	width: 70%;
-
+  main .Personuppgifter input {
+    width: 70%;
   }
-  #allergy{
-	width: 80%;
-	height: 70px;
-	margin-top: 10px;
+  #allergy {
+    width: 80%;
   }
 }
-  
+
+@media screen and (max-width: 600px) {
+  main .Personuppgifter,
+  .days,
+  .food {
+    margin: 10px;
+    padding: 5pz;
+  }
+  main .Personuppgifter input {
+    width: 80%;
+  }
+  #allergy {
+    width: 80%;
+    height: 70px;
+    margin-top: 10px;
+  }
+}
