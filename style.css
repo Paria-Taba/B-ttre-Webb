@@ -100,10 +100,11 @@ main {
 }
 .main-1 .column{
 	padding-bottom: 30px;
-	padding-left: 30px;
+	padding-left: 10px;
 }
 .main-1 .column a {
   background-color: rgb(182, 181, 181);
+  margin: 20px;
   padding: 15px;
   border-radius: 10%;
   cursor: pointer;

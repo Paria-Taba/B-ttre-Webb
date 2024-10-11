@@ -67,6 +67,7 @@ main .title {
   justify-content: center;
   align-items: center;
   box-shadow: 3px 3px 10px 4px rgb(61, 60, 60);
+  padding: 10px;
 }
 main h3 {
   font-size: 25px;
@@ -96,7 +97,7 @@ main .Personuppgifter div {
   flex-direction: column;
 }
 main .Personuppgifter input {
-  width: 50%;
+  width: 60%;
   height: 30px;
   margin-bottom: 20px;
 }
@@ -144,17 +145,67 @@ main .send button:hover {
   transform: scale(1.01);
 }
 
-@media screen and (max-width: 600px) {
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border: 5px double gray;
+	background-color: rgb(226, 226, 226);
+  }
+  
+footer > * {
+	font-size: 20px;
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 10px;
+  }
+  .div-1 {
+	display: flex;
+	flex-direction: column;
+  }
+  .div-1 a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+  }
+  footer .div-2 img {
+	width: 40px;
+	padding: 10px;
+  }
+  footer .div-2 {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  footer h3 {
+	font-size: 30px;
+  }
+  footer .div-1 > a:hover {
+	background-color: pink;
+	text-decoration: underline;
+	border-radius: 10%;
+	font-weight: bold;
+	width: 60%;
+  }
+  footer .div-2 img:hover {
+	transform: scale(1.1);
+  }
+  
+  @media screen and (max-width: 600px) {
   nav ul {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    width: 40%;
+	margin-left: 0;
+	padding-left: 0;
+  }
+  nav ul li{
+	padding: 20px;
   }
   .img-1 img {
     position: absolute;
     top: 30px;
-    max-width: 200px;
+    width: 40%;
     right: 20px;
     margin-left: 20px;
   }
@@ -172,9 +223,31 @@ main .send button:hover {
   nav ul {
     width: 70%;
   }
+  nav ul li{
+	width: 100%;
+  }
 }
 @media screen and (max-width: 760px) {
   footer .div-1 > a:hover {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 600px){
+	main .Personuppgifter,
+.days,
+.food {
+  margin: 10px;
+  padding: 5pz;
+}
+main .Personuppgifter input {
+	width: 70%;
+
+  }
+  #allergy{
+	width: 80%;
+	height: 70px;
+	margin-top: 10px;
+  }
+}
+  
