@@ -136,11 +136,12 @@ main .send button {
   text-decoration: none;
   box-shadow: 1em 1em 2em gray;
   border: 2px solid rgb(74, 69, 69);
+  transition: all 2s;
 }
 main .send button:hover {
   background-color: rgb(60, 60, 60);
   font-weight: bold;
-  transform: translateY(4px) scale(1.01);
+  transform: scale(1.01);
 }
 
 @media screen and (max-width: 600px) {

@@ -15,11 +15,12 @@ nav ul li {
   list-style: none;
   font-size: 19px;
   font-weight: bold;
+
 }
 nav ul li a {
   text-decoration: none;
   color: rgb(77, 53, 53);
-  padding: 20px;
+  padding: 20px; 
 }
 nav ul li>*:hover {
   background-color: rgb(148, 142, 142);
@@ -102,19 +103,21 @@ main {
 	padding-left: 30px;
 }
 .main-1 .column a {
-  background-color: gray;
-  border: 2px solid rgb(104, 102, 102);
+  background-color: rgb(182, 181, 181);
   padding: 15px;
   border-radius: 10%;
   cursor: pointer;
-  color: white;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  box-shadow: 0.2em 0.2em 1em gray, 
-  -0.2em 0.2em 1em gray;
-}
+  box-shadow: 0.4em 0.4em 1.5em gray, 
+  -0.4em 0.4em 1.5em gray;
+  transition: all 2s;
+} 
 .main-1 .column a:hover{
 	font-weight: bold;
-	background-color: rgb(71, 69, 69);
+	background-color: rgb(50, 48, 48);
+	color: white;
 	
 }
 .main .img-2 img {
