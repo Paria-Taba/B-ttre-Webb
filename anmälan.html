@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bättre Webb 2024</title>
+	<link rel="stylesheet" href="anmälan.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Hem</a></li>
+				<li><a href="#">Seminarier</a></li>
+				<li><a href="#">Anmälan</a></li>
+				<li><a href="#">Om konferensen</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</ul>
+		</nav>
+		<div class="header-1">
+			<div class="h-1-2">
+				<h1 class="h-1">Bättre Webb 2024</h1>
+				<h2>Göteborg</h2>
+				<h2>18-20 oktober 2024</h2>
+			</div>
+			<div class="img-1">
+				<img src="pic/eb04aa3b-55f7-432d-8b14-ad6b709d8053.png" alt=" Frontendutvecklare-Bättre webb">
+			</div>
+		</div>
+
+	</header>
+	<main>
+		<form action="#">
+			<div class="title">
+				<h3>Anmäl dig till <b>Bättre Webb 2024 !</b></h3>
+			</div>
+			<div class="Personuppgifter">
+				<h4>Personuppgifter</h4>
+				<div class="column">
+					<label for="name">Namn:*</label>
+					<input type="text" id="name" required>
+				</div>
+				<div class="column">
+					<label for="adress">Adress:</label>
+					<input type="text" id="adress">
+				</div>
+				<div class="column">
+					<label for="post">E-postadress:* </label>
+					<input type="text" id="post" required>
+				</div>
+			</div>
+			<div class="days">
+				<h4>Deltagande dagar</h4>
+				<p>Vänligen välj om du vill delta en, två eller alla tre dagar:</p>
+				<div class="row">
+					<input type="checkbox" id="one">
+					<label for="one">18 oktober 2024</label>
+				</div>
+				<div class="row"><input type="checkbox" id="two">
+					<label for="two">19 oktober 2024</label>
+				</div>
+				<div class="row"><input type="checkbox" id="three">
+					<label for="three">20 oktober 2024</label>
+				</div>
+			</div>
+			<div class="food">
+				<h4>Matpreferenser</h4>
+				<p>Vänligen välj din matpreferens:</p>
+				<div>
+					<input type="radio" id="food-one" name="food">
+					<label for="food-one">Kött</label>
+				</div>
+				<div>
+					<input type="radio" id="food-two" name="food">
+					<label for="food-two">Fisk</label>
+				</div>
+				<div><input type="radio" id="food-three" name="food">
+					<label for="food-three">Vegetarisk</label>
+				</div>
+				<div class="food-allergy">
+					<label for="allergy">Allergier: </label>
+					<input type="text" id="allergy">
+				</div>
+
+			</div>
+			<div class="send">
+				<button>Skicka anmälan</button>
+			</div>
+		</form>
+	</main>
+</body>
+
+</html>
