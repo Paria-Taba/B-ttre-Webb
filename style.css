@@ -5,6 +5,7 @@ header {
   background-color: rgb(254, 222, 227);
   border: 5px double rgb(183, 110, 122);
 }
+
 nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -15,9 +16,12 @@ nav ul li {
   list-style: none;
   font-size: 19px;
   font-weight: bold;
+  display: flex;
+	flex-wrap: nowrap;
 
 }
 nav ul li a {
+	
   text-decoration: none;
   color: rgb(77, 53, 53);
   padding: 20px; 
@@ -228,6 +232,6 @@ footer .div-2 img:hover {
 		padding-left: 10px;
 	 }
 	 footer .div-1 > a:hover {
-		width: 100%;
+		width: 70%;
 	  }
 }

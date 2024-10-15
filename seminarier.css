@@ -15,6 +15,8 @@ nav ul li {
   list-style: none;
   font-size: 19px;
   font-weight: bold;
+  display: flex;
+	flex-wrap: nowrap;
 }
 nav ul li a {
 	padding: 20px;
@@ -189,6 +191,6 @@ footer .div-2 img:hover {
 }
 @media screen and (max-width: 760px) {
   footer .div-1 > a:hover {
-    width: 100%;
+    width: 70%;
   }
 }
