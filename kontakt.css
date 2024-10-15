@@ -59,6 +59,81 @@ margin-left: 100px;
 box-shadow: -10px 10px 20px gray;
 }
 
+main {
+	background-color: rgb(226, 226, 226);
+	border: 5px double gray;
+  }
+  main .title h2 {
+	font-size: 30px;
+  }
+  main .title {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(61, 60, 60);
+	color: rgb(251, 217, 217);
+	align-items: center;
+	box-shadow: 3px 3px 10px 4px rgb(61, 60, 60);
+  }
+  .main h3{
+	font-size: 25px;
+  }
+main .fråga{
+	font-size: 20px;
+	margin: 30px;
+}
+main form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 10px double rgb(0, 0, 0);
+	color: white;
+	margin: 60px;
+	flex-direction: column;
+	font-size: 18px;
+	background-color: rgba(69, 68, 68, 0.605);
+}
+main form input, main form textarea{
+	width: 300px;
+	padding: 10px;
+}
+main form>*{
+	padding: 15px;
+}
+main form h3{
+	font-size: 23px;
+}
+main form button{
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 10%;
+	border: none;
+}
+main form button:hover{
+	background-color: rgb(250, 224, 228);
+}
+@media screen and (max-width:580px) {
+	main form{
+		display: flex;
+
+	align-items: start;
+		border: 5px double gray;	
+		margin: 10px;
+
+	}
+	
+}
+@media screen and (max-width:470px) {
+	main form{
+		border: 5px double gray;	
+		margin: 10px;
+
+	}
+	main form input, main form textarea{
+		width: 180px;
+		
+	}
+}
+
 
 
 
@@ -113,7 +188,7 @@ footer {
 	transform: scale(1.1);
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
 	nav ul {
 	  display: flex;
 	  flex-direction: column;

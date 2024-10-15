@@ -181,7 +181,7 @@ footer .div-2 img:hover {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   nav ul {
     display: flex;
     flex-direction: column;
