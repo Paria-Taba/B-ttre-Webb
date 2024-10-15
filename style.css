@@ -185,12 +185,9 @@ footer .div-2 img:hover {
   nav ul {
     display: flex;
     flex-direction: column;
-	margin-left: 0;
+	margin-left: 10px;
 	padding-left: 0;
 
-  }
-  nav ul li{
-	padding: 20px;
   }
   .img-1 img {
     position: absolute;

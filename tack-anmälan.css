@@ -1,0 +1,29 @@
+
+body{
+background-color: rgb(124, 124, 124);
+opacity: 40px;
+}
+.tack-sida {
+	border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  font-size: 20px;
+  height: 100vh;
+  margin: 40px;
+  padding: 20px;
+}
+.tack-sida>*{
+	padding: 10px;
+}
+.tack-sida a{
+	color: rgb(190, 179, 179);
+}
+@media screen and (max-width:400px) {
+	.tack-sida{
+		margin: 10px;
+	}
+}
