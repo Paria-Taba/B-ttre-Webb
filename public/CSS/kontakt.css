@@ -6,6 +6,10 @@ main .fråga {
   font-size: 20px;
   margin: 30px;
 }
+main .title .kontakt{
+	display: flex;
+ justify-content: center;
+}
 main form {
   display: flex;
   justify-content: center;

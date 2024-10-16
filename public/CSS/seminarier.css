@@ -10,6 +10,10 @@ main .day > ol,
 ul {
   padding: 30px;
 }
+main .day .font {
+	font-size: 25px;
+	margin-left: 20px;
+}
 main .day .pris {
   margin-left: 70px;
   margin-bottom: 30px;
