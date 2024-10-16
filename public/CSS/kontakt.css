@@ -9,6 +9,7 @@ main .fråga {
 main .title .kontakt{
 	display: flex;
  justify-content: center;
+ margin-left: 0;
 }
 main form {
   display: flex;
