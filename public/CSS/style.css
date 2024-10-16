@@ -1,0 +1,85 @@
+
+.main-p {
+	margin: 30px 30px;
+  font-size: 20px;
+}
+main .title{
+	margin:0;
+	font-size: 35px;
+	padding: 30px;
+}
+.main {
+  padding: 20px;
+  border: 2px solid black;
+  background-color: rgb(87, 82, 82);
+  margin: 20px;
+}
+.main-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(220, 218, 218, 0.557);
+}
+.main-1 div {
+  border: 2px solid rgb(67, 62, 62);
+}
+.main-1 .column .title-p {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(49, 32, 32);
+  display: flex;
+  justify-content: center;
+}
+.main-1 .column li {
+  margin: 20px;
+}
+.main-1 .column ul{
+	padding-bottom: 20px;
+}
+.main-1 .column{
+	padding-bottom: 30px;
+	padding-left: 10px;
+}
+.main-1 .column a {
+  background-color: rgb(182, 181, 181);
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10%;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  box-shadow: 0.4em 0.4em 1.5em gray, 
+  -0.4em 0.4em 1.5em gray;
+  transition: all 2s;
+} 
+.main-1 .column a:hover{
+	font-weight: bold;
+	background-color: rgb(50, 48, 48);
+	color: white;
+	
+}
+.main .img-2 img {
+  width: 100%;
+  margin-top: 40px;
+}
+.main .img-2 img:hover {
+  transform: scale(0.98);
+  transition: all 1s;
+
+}
+
+@media screen and (max-width: 760px){
+	.main-1 {
+		display: flex;
+		flex-direction: column;
+	  }
+	  .main-1 .column button {
+		margin-bottom: 10px;
+	  }
+
+	 .main-1 .column ul{
+		padding-left: 10px;
+	 }
+	
+}
