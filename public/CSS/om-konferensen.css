@@ -1,4 +1,3 @@
-
 .title h3 {
   font-size: 35px;
 }
@@ -8,20 +7,21 @@
   box-shadow: 20px 20px 40px 5px rgb(83, 82, 82);
 }
 .conference {
-display: grid;
-grid-template-columns: 1.5fr 1.5fr;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
   margin: 30px;
 }
-.conference>*{
-	padding: 20px;
+.conference > * {
+  padding: 20px;
 }
-.conference-img{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.conference-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.conference p, .conference-1 p {
-	font-size: 18px;
+.conference p,
+.conference-1 p {
+  font-size: 18px;
 }
 .conference-1 h4 {
   font-size: 30px;
@@ -67,63 +67,60 @@ main .talare-row {
   display: flex;
   flex-direction: row;
 }
-main .talare-row .talare-ord{
-	margin-top: 10px;
+main .talare-row .talare-ord {
+  margin-top: 10px;
 }
-main .talare-row div p{
-	font-size: 18px;
+main .talare-row div p {
+  font-size: 18px;
 }
 
 main .talare-row img {
   width: 90%;
   border-radius: 10%;
   box-shadow: 10px 15px 40px 10px gray;
+  transition: transform 2s;
 }
 
-
-
+main .talare-row img:hover {
+  transform: scale(0.95);
+}
 
 @media screen and (max-width: 640px) {
-  
   main .talare-row img {
     min-width: 80%;
   }
 }
 @media screen and (max-width: 400px) {
- 
-  main .talare>*{
-	padding: 0px;
-
-  }
-  .conference>* {
+  main .talare > * {
     padding: 0px;
-}
+  }
+  .conference > * {
+    padding: 0px;
+  }
 }
 @media screen and (max-width: 760px) {
-  
   main .talare-row {
     display: flex;
     flex-direction: column;
   }
   .conference {
-	display: flex;
-	flex-direction: column;
-
-	}
-	.conference-1 .chalmers{
-		display: flex;
-		flex-direction: column;
-	}
-	.conference-1 .chalmers-img img{
-		margin-top: 20px;
-	}
-	.conference-1 .chalmers-img{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-right: 20px;
-	}
-	main .talare-row img {
-		width: 50%;
-	  }
+    display: flex;
+    flex-direction: column;
+  }
+  .conference-1 .chalmers {
+    display: flex;
+    flex-direction: column;
+  }
+  .conference-1 .chalmers-img img {
+    margin-top: 20px;
+  }
+  .conference-1 .chalmers-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  main .talare-row img {
+    width: 50%;
+  }
 }
