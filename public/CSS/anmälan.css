@@ -32,12 +32,15 @@ main .Personuppgifter input {
   height: 30px;
   margin-bottom: 20px;
 }
-main .Personuppgifter input:invalid {
-  border: 1px solid red;
+main  input[type="checkbox"]:checked{
+	outline: 1px solid green;
+}
+main input:required:invalid {
+  outline: 1px solid red;
  
 }
-main .Personuppgifter input:required:valid{
-    border: 1px solid green;
+main input:required:valid{
+    outline: 1px solid green;
   }
 main .Personuppgifter label {
   margin-bottom: 20px;

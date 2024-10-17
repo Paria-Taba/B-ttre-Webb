@@ -34,7 +34,7 @@
 	</header>
 	<main>
 		<div class="title">
-			<h3>Anmäl dig till <b>Bättre webb !</b></h3>
+			<h3>Anmäl dig till <b>Bättre webb!</b></h3>
 		</div>
 		<form action="tack-anmälan.html">
 
@@ -57,13 +57,13 @@
 				<h4>Deltagande dagar</h4>
 				<p>Vänligen välj om du vill delta en, två eller alla tre dagar:*</p>
 				<div class="row">
-					<input type="checkbox" id="one">
+					<input type="checkbox" id="one" name="day" checked>
 					<label for="one">18 oktober 2024</label>
 				</div>
-				<div class="row"><input type="checkbox" id="two">
+				<div class="row"><input type="checkbox" id="two" name="day">
 					<label for="two">19 oktober 2024</label>
 				</div>
-				<div class="row"><input type="checkbox" id="three">
+				<div class="row"><input type="checkbox" id="three" name="day">
 					<label for="three">20 oktober 2024</label>
 				</div>
 			</div>
@@ -71,7 +71,7 @@
 				<h4>Matpreferenser</h4>
 				<p>Vänligen välj din matpreferens:*</p>
 				<div>
-					<input type="radio" id="food-one" name="food">
+					<input type="radio" id="food-one" name="food" required>
 					<label for="food-one">Kött</label>
 				</div>
 				<div>
