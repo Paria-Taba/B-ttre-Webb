@@ -27,6 +27,9 @@ main form textarea {
   width: 300px;
   padding: 10px;
 }
+main form input:required:valid{
+	outline: 1px solid green;
+}
 main form > * {
   padding: 15px;
 }
